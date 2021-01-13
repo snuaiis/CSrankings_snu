@@ -33,11 +33,6 @@ duplicated.to_csv('duplicated.csv')
 dblp_upload = dblp_upload.append(dblp_master)
 dblp_upload = dblp_upload.drop_duplicates()
 
-#dblp_upload_top = dblp_upload.iloc[:2]
-#dblp_upload_bottom = dblp_upload.iloc[2:]
-#dblp_upload_bottom = dblp_upload_bottom.sort_values(by='name')
-#dblp_upload = dblp_upload_top.append(dblp_upload_bottom)
-
 dblp_upload.to_csv(dblp_upload_path, mode='w', index=False)
     
 
